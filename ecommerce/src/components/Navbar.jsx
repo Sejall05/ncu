@@ -7,6 +7,9 @@ const Navbar = () => (
     <Link to="/">Home</Link>
     <Link to="/products">Products</Link>
     <Link to="/cart">Cart</Link>
+    <span style={{ color: '#888', marginLeft: 'auto', fontSize: '0.9rem' }}>
+      (Product images are placeholders)
+    </span>
   </nav>
 );
 
