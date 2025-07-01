@@ -13,8 +13,10 @@ const quotes = [
 ];
 
 // function to get a random quote
+
 function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
+    const quotes = quotes[randomIndex];
     document.getElementById("quote").innerText = `${quotes[randomIndex].text}`;
     document.getElementById("author").innerText = `${quotes.author}`;
 }
