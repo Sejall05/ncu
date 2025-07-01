@@ -5,4 +5,5 @@ const products = [
   { id: 3, name: 'Product 3', price: 19.99, image: 'https://via.placeholder.com/150', description: 'Description for product 3.' },
 ];
 
+
 export default products;

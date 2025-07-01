@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import products from '../mockProducts';
 
+
 const ProductDetails = () => {
   const { id } = useParams();
   const product = products.find(p => p.id === Number(id));

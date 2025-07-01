@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => (
   <nav style={{ padding: '1rem', background: '#f8f8f8', marginBottom: '2rem', display: 'flex', gap: '2rem' }}>
     <Link to="/">Home</Link>

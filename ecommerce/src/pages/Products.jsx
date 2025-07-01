@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import products from '../mockProducts';
 import styles from './Products.module.css';
 
+
 const Products = () => (
   <div className={styles.container}>
     <h2>Products</h2>
