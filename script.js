@@ -1,22 +1,20 @@
 // array of famous quotes
+
 const quotes = [
     { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+    { text: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
     { text: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill" },
-    { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
-    { text: "You miss 100% of the shots you don't take.", author: "Wayne Gretzky" },
+    { text: "You miss 100% of the shots you don’t take.", author: "Wayne Gretzky" },
+    { text: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" },
+    { text: "In the end, we will remember not the words of our enemies, but the silence of our friends.", author: "Martin Luther King Jr." },
     { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
-    { text: "Don't watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
-    { text: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein" },
-    { text: "The journey of a thousand miles begins with one step.", author: "Lao Tzu" },
-    { text: "What we think, we become.", author: "Buddha" },
-    { text: "Dream big and dare to fail.", author: "Norman Vaughan" }
+    { text: "Happiness is not something ready made. It comes from your own actions.", author: "Dalai Lama" },
+    { text: "Do not go where the path may lead, go instead where there is no path and leave a trail.", author: "Ralph Waldo Emerson" },
+    { text: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius" }
 ];
-
-// function to get a random quote
-
+// function to get a random quote   
 function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    const quotes = quotes[randomIndex];
-    document.getElementById("quote").innerText = `${quotes[randomIndex].text}`;
-    document.getElementById("author").innerText = `${quotes.author}`;
+    document.getElementById("quote").innerText = quotes[randomIndex].text;
+    document.getElementById("author").innerText = `– ${quotes.author}`;
 }
