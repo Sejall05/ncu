@@ -12,10 +12,12 @@ const quotes = [
     { text: "Do not go where the path may lead, go instead where there is no path and leave a trail.", author: "Ralph Waldo Emerson" },
     { text: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius" }
 ];
+
 // function to get a random quote   
+// function to get a random quote
 function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    const quotes = quotes[randomIndex];
-    document.getElementById("quote").innerText = quotes.text;
-    document.getElementById("author").innerText = `– ${quotes.author}`;
+    document.getElementById("quote").innerText = `${quotes[randomIndex].text}`;
+    document.getElementById("author").innerText = `– ${quotes[randomIndex].author}`;
 }
+
